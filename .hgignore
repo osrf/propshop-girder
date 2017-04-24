@@ -1,0 +1,11 @@
+syntax: glob
+
+.DS_Store
+dist
+node_modules
+typings
+coverage
+*.swp
+*.swo
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
