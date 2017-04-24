@@ -6,4 +6,5 @@ simulation assets. Check it out [here](https://data.ignitionfuel.org).
 
 ## Automatically deploy to Elastic Beanstalk
 
-The branch `production` is automatically deployed when new commits are pushed.
+The branch `production` is automatically deployed when new commits are pushed
+in this branch.
