@@ -45,33 +45,64 @@ external Mongo database.
 * Click on `Launch instances` and save the `.pem` file in a folder with the
   rest of your keys (e.g. ~/keys). The permissions of the directory have to be
   `drwx------` and your key's permissions need to be `-rw-------`
-* Once your instance is up and running, log in:
-
-      ssh -i ~/keys/<your_key_file.pem> ec2-user@<your_public_ip>
-
-  Replace `<your_key_file.pem>` with the name of the `.pem` that you downloaded
+* Once your instance is up and running, log in. Replace `<your_key_file.pem>` with the name of the `.pem` that you downloaded
   and `<your_public_ip>` with the public IP address of your running instance.
   Go to `Services`->`Compute`->`EC2`, click on `Running instances` and select
   your recently created instance. You should see in the property windows a field
-  name `IPv4 Public IP` with the IP address. It's also a good idea to set a name
-  for your instance if you don't have it yet.
+  name `IPv4 Public IP` with the IP address. It's also a good idea to set a name for your instance if you don't have it yet.
+
+   
+```
+#!python
+
+ssh -i ~/keys/<your_key_file.pem> ec2-user@<your_public_ip>
+```
+
+  
+
 * Install the Mongo database server:
 
-     sudo apt-get install mongodb
+
+```
+#!python
+
+sudo apt-get install mongodb
+```
 
 
 * Logout, and test that you can connect to your remote instance. First of all,
   install the Mongo client app:
 
-    sudo apt-get install mongodb-clients
+
+```
+#!python
+
+sudo apt-get install mongodb-clients
+```
+
+
 
 * And verify your connection with the remote instance:
 
-    mongo <your_public_ip>
+
+```
+#!python
+
+mongo <your_public_ip>
+```
 
   Replace `<your_public_ip>` with the public IP address of your running
-  instance. *Note that this step should stop working when we secure the 27017
-  port on your instance.*
+  instance. **Note that this step should stop working when we secure the 27017
+  port on your instance.** You should get a similar message to this one:
+
+
+```
+#!python
+
+MongoDB shell version: 2.6.10
+connecting to: x.x.x.x/test
+```
+
 
 ## Automatically deploy to Elastic Beanstalk
 
