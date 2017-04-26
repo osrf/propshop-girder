@@ -40,7 +40,7 @@ external Mongo database.
   is publicly available without any authentication. We'll change this after
   configuring and launching your Girder instance via Elastic Beanstalk**
 * Click on `Review and launch`->`Launch`
-* A new window will pop-up associate a key pair to your instance. Create a new
+* A new window will pop-up to associate a key pair to your instance. Create a new
   one or choose an existing one
 * Click on `Launch instances` and save the `.pem` file in a folder with the
   rest of your keys (e.g. ~/keys). The permissions of the directory have to be
