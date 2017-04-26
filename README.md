@@ -44,7 +44,7 @@ external Mongo database.
   one or choose an existing one
 * Click on `Launch instances` and save the `.pem` file in a folder with the
   rest of your keys (e.g. ~/keys). The permissions of the directory have to be
-  `drwx------` and your key's permissions needs to be `-rw-------`
+  `drwx------` and your key's permissions need to be `-rw-------`
 * Once your instance is up and running, log in:
 
       ssh -i ~/keys/<your_key_file.pem> ec2-user@<your_public_ip>
