@@ -36,9 +36,9 @@ external Mongo database.
   We're insterested in opening the port 22 TCP (SSH) and 27017 (MongoDB).
   Select `SSH`, `TCP protocol`, port 22 and `0.0.0.0/0` for allowing SSH from
   any machine. Click on `Add Rule` and select `Custom TCP rule`, `TCP`, 27017
-  port and `0.0.0.0/0` for now. *Warning: With this configuration your MongoDB
+  port and `0.0.0.0/0` for now. **Warning: With this configuration your MongoDB
   is publicly available without any authentication. We'll change this after
-  configuring and launching your Girder instance via Elastic Beanstalk*
+  configuring and launching your Girder instance via Elastic Beanstalk**
 * Click on `Review and launch`->`Launch`
 * A new window will pop-up associate a key pair to your instance. Create a new
   one or choose an existing one
@@ -77,4 +77,3 @@ external Mongo database.
 
 The branch `production` is automatically deployed when new commits are pushed
 in this branch.
-
